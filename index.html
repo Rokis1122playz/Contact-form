@@ -29,11 +29,17 @@
         <label for="emailAddress">Email Address: *</label><br />
         <input type="email" id="emailAddress" /><br />
 
-        <label for="queryType">Query Type: *</label><br />
-        <input type="checkbox" id="queryType" value="General Enquiry" />General
-        Enquiry <br />
-        <input type="checkbox" id="queryType" value="Support Request" />Support
-        Request <br />
+        <div class="query">
+          <label for="queryType">Query Type: *</label><br /><br />
+          <div class="general">
+            <input type="radio" id="queryType" value="General" />General Enquiry
+            <br />
+          </div>
+          <div class="support">
+            <input type="radio" id="queryType" value="Support" />Support Request
+            <br />
+          </div>
+        </div>
 
         <label for="message">Message: *</label><br />
         <textarea name="message" id="message" rows="10" cols="40"></textarea
