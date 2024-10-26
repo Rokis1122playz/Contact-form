@@ -7,7 +7,7 @@ body {
   font-family: "Karla", sans-serif;
   border-radius: 20px;
   background-color: hsl(0, 0%, 100%);
-  height: 400px;
+  height: 550px;
   width: 500px;
   margin: 0;
   position: absolute;
@@ -29,10 +29,34 @@ textarea {
   border-radius: 5px;
   margin-top: 5px;
 }
-@media only screen and (max-width: 372px) {
+.consent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.consent input[type="checkbox"] {
+  border-radius: 5px;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+button {
+  background-color: hsl(169, 82%, 27%);
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-size: 16px;
+}
+@media only screen and (max-width: 400px) {
   .wrapper {
-    height: 500px;
+    height: 550px;
     width: 300px;
     padding: 20px;
+  }
+  button {
+    height: 50px;
+    width: 300px;
   }
 }
