@@ -86,7 +86,9 @@ input[type="email"] {
   border-radius: 5px;
 }
 .lastName,
-.firstName {
+.firstName,
+.general,
+.support {
   width: 240px;
 }
 @media only screen and (max-width: 400px) {
@@ -100,10 +102,18 @@ input[type="email"] {
     height: 50px;
     width: 300px;
   }
-  .name {
+  .name,
+  .query {
     display: block;
   }
   textarea {
     width: 300px;
+  }
+  .lastName,
+  .firstName,
+  .general,
+  .support,
+  input[type="email"] {
+    width: -webkit-fill-available;
   }
 }
